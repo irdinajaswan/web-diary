@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Login</h1>
+        <form action="">
+            
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label> <input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button onclick="document.location='home.html'" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+
+
+        </form>
+    </div>
+    <div id="home-content" style="display: none;">
+        <h2>Welcome to the Home Page!</h2>
+        <button onclick="redirectTo('new-entry.html')">New Entry</button>
+        <button onclick="redirectTo('view-entries.html')">View Entries</button>
+        <button onclick="redirectTo('view-bookmarks.html')">View Bookmarks</button>
+        <button onclick="logout()">Log Out</button>
+    </div>
+
+    <!-- New Entry Content -->
+    <div id="new-entry-content" style="display: none;">
+        <!-- Content for the New Entry page -->
+    </div>
+
+    <!-- View Entries Content -->
+    <div id="view-entries-content" style="display: none;">
+        <!-- Content for the View Entries page -->
+    </div>
+
+    <!-- View Bookmarks Content -->
+    <div id="view-bookmarks-content" style="display: none;">
+        <!-- Content for the View Bookmarks page -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
